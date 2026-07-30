@@ -1,0 +1,78 @@
+:root {
+  /* Brand — légèrement adoucis */
+  --aej-green: #2d8a4f;
+  --aej-green-dark: #1c6b3a;
+  --aej-green-mid: #3fa563;
+  --aej-green-soft: #eaf6ef;
+  --aej-orange: #f2955a;
+  --aej-orange-soft: #fff5ec;
+
+  /* Status — désaturés, moins agressifs */
+  --danger: #e0645f;
+  --danger-soft: #fdf1f1;
+  --danger-border: #f6cfcd;
+  --warning: #e0a44f;
+  --warning-soft: #fefaf1;
+  --success: #3fa563;
+
+  /* Neutrals — bordures et texte plus doux */
+  --bg-app: #f4f8f5;
+  --bg-card: #ffffff;
+  --border: #eaf1ec;
+  --text-primary: #263831;
+  --text-secondary: #6b796f;
+  --text-muted: #96a29a;
+
+  /* Layout — coins plus ronds, ombres plus diffuses/légères */
+  --sidebar-w: 240px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+  --shadow-card: 0 1px 2px rgba(38, 56, 49, 0.02), 0 4px 14px rgba(38, 56, 49, 0.03);
+  --shadow-card-hover: 0 6px 20px rgba(38, 56, 49, 0.06);
+
+  --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg-app);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5d5cb;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--aej-green);
+  outline-offset: 2px;
+}

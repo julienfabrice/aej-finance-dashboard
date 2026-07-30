@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="60" viewBox="0 0 160 60">
+  <rect width="160" height="60" fill="#f2f7f4" rx="8"/>
+  <text x="80" y="28" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1a7a3c" text-anchor="middle">LOGO 1</text>
+  <text x="80" y="42" font-family="Arial, sans-serif" font-size="9" fill="#5b6b62" text-anchor="middle">(à remplacer)</text>
+</svg>

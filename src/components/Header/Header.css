@@ -1,0 +1,312 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 0;
+  background: #1e7a46;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   Bandeau supérieur du Header
+=========================== */
+.header-announcement-bar {
+  background: #14522f; /* Une nuance légèrement plus sombre pour contraster avec le header */
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 16px;
+  width: 100%;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ligne principale du haut */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+  padding: 10px 16px;
+}
+
+/* ===========================
+   Statistiques Dashboard
+=========================== */
+.header-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px 10px;
+  background: rgba(0, 0, 0, 0.04);
+  width: 100%;
+}
+
+.header-stat-card {
+  flex: 1;
+  max-width: 180px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 9px;
+  color: #374151;
+  margin-bottom: 1px;
+  font-weight: 700;
+}
+
+.header-stat-card strong {
+  font-size: 11px;
+  color: #1e7a46;
+  font-weight: 800;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.header-step {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: var(--aej-green-soft);
+  color: var(--aej-green);
+  font-weight: 800;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.header-search input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  width: 110px;
+  background: transparent;
+  font-weight: 600;
+}
+
+.header-icon-btn {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  font-size: 13px;
+}
+
+.header-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background: var(--danger);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  border-radius: 999px;
+  min-width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2px;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 8px 3px 3px;
+}
+
+.header-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--aej-green);
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-profile-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-size: 10px;
+}
+
+.header-profile-text strong {
+  font-size: 11px;
+}
+
+.header-profile-text span {
+  color: var(--text-muted);
+}
+
+.header-chevron {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+/* ===========================
+   Barre inférieure (En gras)
+=========================== */
+.header-bottom {
+  margin-top: 0;
+  background: var(--bg-app);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700; /* Applique le gras globalement sur la barre */
+}
+
+.header-breadcrumb {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+  font-weight: 700; /* Fil d'ariane en gras */
+}
+
+.header-breadcrumb .sep {
+  color: #c8d4cc;
+}
+
+.header-breadcrumb .current {
+  color: var(--text-primary);
+  font-weight: 800; /* Élément actif du fil d'ariane en gras fort */
+}
+
+.header-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.header-new-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: var(--aej-green);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800; /* Bouton en gras fort */
+  padding: 6px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.header-new-btn:hover {
+  background: var(--aej-green-dark);
+}
+
+.header-filters {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.header-filter-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--aej-green-soft);
+  color: var(--aej-green-dark);
+  font-size: 11px;
+  font-weight: 700; /* Badge de filtre en gras */
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.header-filter-badge .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--aej-green);
+}
+
+.header-filters select,
+.header-region-pills .pill {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  font-weight: 700; /* Sélecteurs et pills en gras */
+}
+
+.header-region-pills {
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.header-region-pills .pill:hover {
+  border-color: var(--aej-green);
+  color: var(--aej-green);
+}

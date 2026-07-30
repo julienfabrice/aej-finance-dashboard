@@ -1,0 +1,67 @@
+.ci-map-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ci-map-svg {
+  width: 62%;
+  height: 210px;
+}
+
+.ci-map-point {
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.ci-map-point:hover circle:first-child {
+  opacity: 1;
+}
+
+.ci-map-tooltip {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #14231a;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ci-map-tooltip span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+}
+
+.ci-map-legend {
+  flex: 1;
+  font-size: 10.5px;
+  color: var(--text-secondary);
+}
+
+.ci-map-legend p {
+  margin: 0 0 6px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 11px;
+}
+
+.ci-map-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.ci-map-legend .chip {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
