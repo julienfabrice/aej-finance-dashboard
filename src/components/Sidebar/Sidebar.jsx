@@ -9,6 +9,7 @@ const MAIN_ITEMS = [
   { key: 'dashboard-finance', label: 'Dashboard Finance', icon: '📊', path: '/dashboard' },
   { key: 'beneficiaires', label: 'Liste des bénéficiaires', icon: '📋', path: '/beneficiaires' },
   { key: 'dossier', label: 'Dossier bénéficiaire', icon: '📁', path: '/beneficiaires/AEJ-2024-0001' },
+  { key: 'workflow', label: 'Suivi du workflow', icon: '🗂️', path: '/workflow' },
   { key: 'plan-remboursement', label: 'Plan de remboursement', icon: '🧾', path: '/beneficiaires/AEJ-2024-0001/plan' },
   { key: 'exploitation', label: 'Exploitation micro-projet', icon: '🌾', path: '/exploitation' },
   { key: 'indicateurs', label: "Indicateurs d'impact", icon: '📈', path: '/indicateurs' },

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import DashboardLayout from '../layouts/DashboardLayout';
 import Header from '../components/Header/Header';
 import DossierProfile from '../components/Dossier/DossierProfile';
@@ -7,11 +7,11 @@ import DossierKPIs from '../components/Dossier/DossierKPIs';
 import DossierInfoPanel from '../components/Dossier/DossierInfoPanel';
 import DossierTabs from '../components/Dossier/DossierTabs';
 import DossierResumeTab from '../components/Dossier/DossierResumeTab';
+import DossierWorkflowTab from '../components/Dossier/DossierWorkflowTab';
 import DossierTabPlaceholder from '../components/Dossier/DossierTabPlaceholder';
 import { getDossierByCode } from '../data/dossierData';
 
 const TAB_LABELS = {
-  workflow: 'Workflow',
   documents: 'Documents',
   historique: 'Historique',
 };
@@ -26,7 +26,8 @@ const TAB_ROUTES = {
 export default function DossierBeneficiairePage() {
   const { code = 'AEJ-2024-0001' } = useParams();
   const dossier = getDossierByCode(code);
-  const [tab, setTab] = useState('resume');
+  const [searchParams] = useSearchParams();
+  const [tab, setTab] = useState(searchParams.get('tab') === 'workflow' ? 'workflow' : 'resume');
   const navigate = useNavigate();
 
   function handleTabChange(key) {
@@ -53,6 +54,8 @@ export default function DossierBeneficiairePage() {
 
         {tab === 'resume' ? (
           <DossierResumeTab dossier={dossier} />
+        ) : tab === 'workflow' ? (
+          <DossierWorkflowTab dossier={dossier} />
         ) : (
           <DossierTabPlaceholder label={TAB_LABELS[tab] ?? tab} />
         )}
