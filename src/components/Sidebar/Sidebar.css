@@ -155,18 +155,22 @@
   background: #eaf6ef;
   border-radius: var(--radius-md);
   flex-shrink: 0;
-  max-height: 70px;
-  padding: 4px;
+
+  height: 70px;   /* Augmenter ici */
+  padding: 10px;
+
   margin: 0 14px 10px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   overflow: hidden;
 }
 
 .sidebar-logo-bottom img {
-  width: 100%;
-  max-height: 34px;
+  width: 120%;
+  max-height: 70px;
   object-fit: contain;
   display: block;
 }
